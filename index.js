@@ -32,12 +32,12 @@ const farewells = [
 ];
 
 function createMsg(){
-  const greeting = greetings[Math.floor(Math.random * greetings.length)];
-  const philosophy = philosophies[Math.floor(Math.random * philosophies.length)]];
-  const farewell = farewells[Math.floor(Math.random * farewells.length)]];
+  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+  const philosophy = philosophies[Math.floor(Math.random() * philosophies.length)];
+  const farewell = farewells[Math.floor(Math.random() * farewells.length)];
   const lines = "\n.....................\n.....................\n";
 
   return greeting + lines + philosophy + lines + farewell;
 }
 
-console.log(createMsg);
+console.log(createMsg());
